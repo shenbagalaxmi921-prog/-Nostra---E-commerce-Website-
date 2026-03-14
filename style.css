@@ -1,0 +1,129 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile View */
+
+@media (max-width:768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 20px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: #f4f4f4;
+
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.collection-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    padding: 8px 15px;
+    margin: 5px;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+}
+
+.contact button {
+    padding: 10px 20px;
+}
